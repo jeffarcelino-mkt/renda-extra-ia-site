@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renda Extra com IA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+  body {
+    margin: 0;
+    background: #041225; /* azul escuro igual ao PDF */
+    font-family: 'Inter', sans-serif;
+    color: #e5ecf5;
+  }
+
+  header {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(180deg, #041225, #06203a);
+  }
+
+  header img {
+    width: 340px;
+    margin-bottom: 30px;
+    filter: drop-shadow(0px 0px 12px #00c8ff55);
+  }
+
+  header h1 {
+    font-size: 58px;
+    color: #ffffff;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  header p {
+    font-size: 22px;
+    opacity: .9;
+    max-width: 750px;
+    margin: 15px auto 0;
+  }
+
+  .cta {
+    margin-top: 35px;
+    display: inline-block;
+    padding: 18px 38px;
+    background: #00c8ff; /* azul neon igual aos elementos do PDF */
+    color: #000;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 0 20px #00c8ff55;
+  }
+
+  section {
+    max-width: 1050px;
+    margin: 80px auto;
+    padding: 0 20px;
+  }
+
+  h2 {
+    font-size: 40px;
+    color: #00c8ff; /* azul neon */
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+  }
+
+  .card {
+    background: #06203a;
+    padding: 35px;
+    border-radius: 16px;
+    border: 1px solid #0f2f55;
+    box-shadow: 0 0 12px #00c8ff22;
+  }
+
+  .card h3 {
+    margin: 0 0 10px;
+    font-size: 26px;
+    color: #00c8ff;
+  }
+
+  .price-box {
+    text-align: center;
+    background: #06203a;
+    border-radius: 16px;
+    padding: 60px;
+    border: 1px solid #0f2f55;
+    box-shadow: 0 0 18px #00c8ff33;
+  }
+
+  .price {
+    font-size: 60px;
+    color: #00ffaa;
+    font-weight: 700;
+    margin: 25px 0;
+  }
+
+  footer {
+    text-align: center;
+    padding: 50px;
+    opacity: .6;
+    font-size: 15px;
+  }
+
+/* ANIMAÇÕES PREMIUM */
+
+/* Fade-in suave */
+section, header {
+  animation: fadeIn 1.4s ease forwards;
+  opacity: 0;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Card hover animado */
+.card {
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px #00c8ff55;
+}
+
+/* CTA pulsante */
+.cta {
+  position: relative;
+  animation: pulse 1.8s infinite ease-in-out;
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 18px #00c8ff55; }
+  50% { box-shadow: 0 0 28px #00c8ff99; }
+  100% { box-shadow: 0 0 18px #00c8ff55; }
+}
+
+/* Glow neon nos títulos */
+h2 {
+  animation: glow 2.5s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from { text-shadow: 0 0 6px #00c8ff55; }
+  to { text-shadow: 0 0 16px #00c8ff; }
+}
+
+/* Animação no preço */
+.price {
+  animation: popIn 1.3s ease forwards;
+  opacity: 0;
+}
+@keyframes popIn {
+  0% { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Hover suave no CTA */
+.cta:hover {
+  transform: scale(1.06);
+}
+
+/* Delay entre seções */
+section:nth-of-type(1) { animation-delay: .4s; }
+section:nth-of-type(2) { animation-delay: .8s; }
+section:nth-of-type(3) { animation-delay: 1.2s; }
+section:nth-of-type(4) { animation-delay: 1.6s; }
+section:nth-of-type(5) { animation-delay: 2.0s; }
+
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>Renda Extra com IA</h1>
+    <p><strong>A oportunidade mais rápida, simples e acessível</strong> para começar a ganhar dinheiro usando Inteligência Artificial — mesmo que você esteja começando do zero.</p>
+
+    <a href="https://pay.kiwify.com.br/SEU-LINK-AQUI" class="cta">Quero Garantir Minha Vaga Agora</a>
+  </header>
+
+  <section>
+    <h2>Este é o menor investimento para entrar no mercado que mais cresce no mundo</h2>
+    <div class="price-box">
+      <p><strong>Você está a um passo de transformar seu celular em uma máquina de renda extra.</strong></p>
+      <div class="price">R$ 19,90</div>
+      <a href="https://pay.kiwify.com.br/SEU-LINK-AQUI" class="cta">Quero Começar Agora</a>
+      <p style="margin-top:20px; font-size:16px; opacity:.8;">Acesso vitalício</p>
+    </div>
+  </section></a>
+    </div>
+  </section>
+
+<section>
+  <h2>Depoimentos de quem já está ganhando com IA</h2>
+  <div class="grid">
+    <div class="card"><h3>“Primeiro serviço fechado!”</h3><p>Usei um dos métodos e fechei meu primeiro job em menos de 48h.</p><p><strong>— Lucas M.</strong></p></div>
+    <div class="card"><h3>“Recuperei o investimento no mesmo dia”</h3><p>Recuperei o valor do ebook poucas horas depois aplicando o conteúdo.</p><p><strong>— Camila R.</strong></p></div>
+    <div class="card"><h3>“Simples e direto ao ponto”</h3><p>Finalmente encontrei algo explicado de forma clara.</p><p><strong>— Renato F.</strong></p></div>
+  </div>
+</section>
+
+
+
+<section>
+  <h2>Por que agir agora?</h2>
+  <div class="grid">
+    <div class="card"><h3>Mercado em alta</h3><p>A IA cresce mais rápido que qualquer outra tecnologia.</p></div>
+    <div class="card"><h3>Preço Promocional</h3><p>O valor especial de R$ 19,90 pode acabar a qualquer momento.</p></div>
+    
+  </div>
+  <div style="text-align:center; margin-top:40px;">
+    <a href="https://pay.kiwify.com.br/SEU-LINK-AQUI" class="cta" style="font-size:26px; padding:20px 50px;">Quero Garantir Minha Vaga</a>
+  </div>
+</section>
+
+<section>
+  <h2>Perguntas Frequentes</h2>
+  <div class="card" style="margin-bottom:20px;"><h3>✔ Preciso saber usar IA?</h3><p>Não. O ebook é para iniciantes.</p></div>
+  <div class="card" style="margin-bottom:20px;"><h3>✔ Funciona no celular?</h3><p>Sim! Todo o conteúdo pode ser aplicado pelo celular.</p></div>
+  <div class="card" style="margin-bottom:20px;"><h3>✔ Como recebo?</h3><p>Acesso imediato por e-mail após a compra.</p></div>
+  <div class="card" style="margin-bottom:20px;"><h3>✔ Vou conseguir aplicar?</h3><p>Sim, tudo é explicado passo a passo.</p></div>
+
+  <div style="text-align:center; margin-top:40px;">
+    <a href="https://pay.kiwify.com.br/SEU-LINK-AQUI" class="cta" style="font-size:26px; padding:20px 50px;">Quero Começar Agora</a>
+  </div>
+</section>
+
+<footer>
+    © 2025 — Renda Extra com IA. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
